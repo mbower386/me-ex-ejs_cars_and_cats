@@ -9,7 +9,7 @@ app.set('views', __dirname + "/views");
 app.set('view engine', 'ejs');
 
 app.get('/', function (request, response) {
-  response.send(index.html);
+  response.sendFile('/static/index.html');
 });
 
 app.get('/cats', function (request, response) {
